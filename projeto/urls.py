@@ -19,7 +19,6 @@ from django.http import HttpResponse
 from django.urls import path
 
 
-
 def my_view(request):
     return HttpResponse('Uma linda string')
     # return HTTP response
