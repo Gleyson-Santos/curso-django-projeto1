@@ -13,4 +13,5 @@ def contato(request):
 
 
 def sobre(request):
-    return HttpResponse('sobre')
+    return render(request, 'recipes/sobre.html')
+
