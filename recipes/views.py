@@ -1,17 +1,19 @@
-from django.http import HttpResponse
 from django.shortcuts import render
+
+template_name_home = 'recipes/home.html'
+template_name_contato = 'recipes/contato.html'
+template_name_sobre = 'recipes/sobre.html'
 
 
 def home(request):
-    return render(request, 'recipes/home.html', context={
+    return render(request, template_name_home, context={
         'name': 'Gleyson Santos',
     })
 
 
 def contato(request):
-    return render(request, 'recipes/contato.html')
+    return render(request, template_name_contato)
 
 
 def sobre(request):
-    return render(request, 'recipes/sobre.html')
-
+    return render(request, template_name_sobre)
