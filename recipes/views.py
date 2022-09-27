@@ -1,12 +1,12 @@
 from django.shortcuts import render
 
-template_name_home = 'recipes/pages/home.html'
-
-
-context_obj = {
-    'name': 'Gleyson Santos',
-}
+template_home = 'recipes/pages/home.html'
+template_recipe = 'recipes/pages/recipe-view.html'
 
 
 def home(request):
-    return render(request, template_name_home, context=context_obj)
+    return render(request, template_home, context=context_obj)
+
+
+def recipe(request, id):
+    return render(request, template_recipe)
