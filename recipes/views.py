@@ -5,7 +5,7 @@ template_recipe = 'recipes/pages/recipe-view.html'
 
 
 def home(request):
-    return render(request, template_home, context=context_obj)
+    return render(request, template_home)
 
 
 def recipe(request, id):
