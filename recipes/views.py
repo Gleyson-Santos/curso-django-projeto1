@@ -9,7 +9,8 @@ context_home = {
 }
 
 context_recipe = {
-    'recipe': make_recipe()
+    'recipe': make_recipe(),
+    'is_detail_page': True,
 }
 
 
